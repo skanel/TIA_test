@@ -16,10 +16,6 @@ round-trip min/avg/max/stddev = 44.138/44.138/44.138/0.000 ms
 - **Packet Loss:** Measure the number of packets that fail to reach their destination.
 - **Connectivity Status:** Check if the network is connected or disconnected.
 
-# Explanation:
-- **Bandwidth Usage**: psutil.net_io_counters() is used to get the bytes sent and received by the network interface.
-- **Latency and Packet Loss**: The ping command is executed using subprocess.check_output() to determine the round-trip time. The output is parsed to extract the latency.
-- **Connectivity Status**: A simple connection attempt to a well-known host (Google DNS) using socket.create_connection() determines if the network is connected.
 # Choose the Tools:
 - Use libraries like `psutil` for bandwidth usage.
 - Use `ping3` for latency and packet loss.
