@@ -41,7 +41,7 @@ Let's say you have three servers: Server A, Server B, and Server C.
 To simulate and test the provided load balancer code, you'll need to set up mock backend servers and then use a tool to send requests to the load balancer. Here’s how you can simulate and test the load balancer:
 1. run `python servers.py`
 2. Running the Load Balancer
-Ensure you have all backend servers (servers.py) running before starting the load balancer (example2.py).
+Ensure you have all backend servers (`servers.py`) running before starting the load balancer (`example2.py`).
 3. Sending Requests to the Load Balancer 
 Here’s an example using curl:
 
